@@ -1,0 +1,13 @@
+h2 FireFreeze
+div.row
+  div.col-md-12
+    ul
+    - @entries.each do |entry|
+      li
+        a href= entry.archive_link
+          = entry.title
+
+        small
+          a target="_blank" href= entry.link
+            | [元ページ]
+
